@@ -1,4 +1,4 @@
-(function(){
+;(function(){
 
     // Reducer
     //  (state, action) => state
@@ -6,7 +6,7 @@
     //      DECREMENT ? state - 1
     var counterReducer = function(state, action) {
         // INITIAL STATE
-        if(state == undefined){
+        if(state === undefined){
             return 0;
         }
 
@@ -21,7 +21,7 @@
             default:
                 return state;
         }
-    }
+    };
 
     // Store
     //  createStore(reducer)
@@ -33,27 +33,29 @@
     //  DECREMENT
     var increment = function(){
         return {type: 'INCREMENT'}
-    }
+    };
+    
     var decrement = function(){
         return {type: 'DECREMENT'}
-    }
+    };
 
     // View
     var updateView = function(){
         var count = store.getState().toString();
-        document.getElementById("count").innerHTML = count;
-    }
+        document.getElementById('count').innerHTML = count;
+    };
+    
     store.subscribe(updateView)
 
     // View Actions
-    document.getElementById("increment")
-        .addEventListener("click", function(){
+    document.getElementById('increment')
+        .addEventListener('click', function(){
             store.dispatch(increment())
-        })
+        });
 
-    document.getElementById("decrement")
-        .addEventListener("click", function(){
+    document.getElementById('decrement')
+        .addEventListener('click', function(){
             store.dispatch(decrement())
-        })
+        });
     
-})()
+}());
