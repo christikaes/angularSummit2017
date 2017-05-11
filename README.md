@@ -6,5 +6,7 @@ SETUP:
 * npm install -g @angular-redux/store
 
 
-When to use store:
-http://blog.angular-university.io/angular-2-redux-ngrx-rxjs/
+Resources:
+* http://redux.js.org
+* https://github.com/angular-redux/store/blob/master/articles/intro-tutorial.md
+* http://blog.angular-university.io/angular-2-redux-ngrx-rxjs/
