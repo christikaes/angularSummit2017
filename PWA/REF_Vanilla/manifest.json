@@ -1,0 +1,10 @@
+{
+  "name": "YoChicago",
+  "short_name": "Yo",
+  "theme_color": "#2196f3",
+  "background_color": "#2196f3",
+  "display": "standalone",
+  "orientation": "landscape",
+  "scope": "/",
+  "start_url": "/"
+}
